@@ -5,7 +5,159 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="assets/css/style.css" />
-        <title>Portfolio</title>
+        <title>My Portfolio</title>
     </head>
-    <body></body>
+    <body>
+        <header>
+            <span class="sections">
+                <a href="javascript:;" onclick="goto('section.welcome')">.About</a>
+                <a href="javascript:;" onclick="goto('section.skills')">.Skills</a>
+                <a href="javascript:;" onclick="goto('section.works')">.Works</a>
+                <a href="javascript:;" onclick="goto('section.contact')">.Contact</a>
+            </span>
+        </header>
+
+        <section class="welcome">
+            <span class="name">Hi! I'm Alihan</span>
+            <span class="desc">A Software Developer</span>
+        </section>
+
+        <section class="skills">
+            <div class="skill-group">
+                <span class="skill-title"># Web</span>
+                <div class="skills">
+                    <div class="card">
+                        <div class="img">
+                            <img src="images/php.svg" data-tooltip="Php" />
+                        </div>
+                        <div class="name">PHP</div>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="images/mysql.svg" data-tooltip="Mysql" />
+                        </div>
+                        <div class="name">Mysql</div>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="images/html.svg" data-tooltip="Html" />
+                        </div>
+                        <div class="name">HTML</div>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="images/css.svg" data-tooltip="Css" />
+                        </div>
+                        <div class="name">CSS</div>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="images/js.svg" data-tooltip="Javascript" />
+                        </div>
+                        <div class="name">JavaScript</div>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="images/jquery2.svg" data-tooltip="jQuery" />
+                        </div>
+                        <div class="name">jQuery</div>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="images/sass.svg" data-tooltip="Sass" />
+                        </div>
+                        <div class="name">Sass</div>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="images/bootstrap.svg" data-tooltip="Bootstrap" />
+                        </div>
+                        <div class="name">Bootstrap</div>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="images/webpack.svg" data-tooltip="Webpack" />
+                        </div>
+                        <div class="name">Webpack</div>
+                    </div>
+                    <div class="card hidden"></div>
+                    <div class="card hidden"></div>
+                    <div class="card hidden"></div>
+                    <div class="card hidden"></div>
+                    <div class="card hidden"></div>
+                    <div class="card hidden"></div>
+                    <div class="card hidden"></div>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <span class="skill-title"># OS</span>
+                <div class="skills">
+                    <div class="card">
+                        <div class="img">
+                            <img src="images/osx.svg" data-tooltip="Php" />
+                        </div>
+                        <div class="name">MacOS</div>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="images/linux.svg" data-tooltip="Html" />
+                        </div>
+                        <div class="name">Linux</div>
+                    </div>
+                    <div class="card hidden"></div>
+                    <div class="card hidden"></div>
+                    <div class="card hidden"></div>
+                    <div class="card hidden"></div>
+                    <div class="card hidden"></div>
+                    <div class="card hidden"></div>
+                    <div class="card hidden"></div>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <span class="skill-title"># Learning</span>
+                <div class="skills">
+                    <div class="card">
+                        <div class="img">
+                            <img src="images/swift.svg" data-tooltip="Swift" />
+                        </div>
+                        <div class="name">Swift</div>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="images/nodejs.svg" data-tooltip="NodeJS" />
+                        </div>
+                        <div class="name">NodeJS</div>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="images/react.svg" data-tooltip="ReactJS" />
+                        </div>
+                        <div class="name">ReactJS</div>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="images/laravel.svg" data-tooltip="Laravel" />
+                        </div>
+                        <div class="name">Laravel</div>
+                    </div>
+                    <div class="card hidden"></div>
+                    <div class="card hidden"></div>
+                    <div class="card hidden"></div>
+                    <div class="card hidden"></div>
+                    <div class="card hidden"></div>
+                    <div class="card hidden"></div>
+                    <div class="card hidden"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="works">Works</section>
+
+        <section class="contact">Contact</section>
+
+        <!-- script -->
+        <script src="assets/js/app.js"></script>
+    </body>
 </html>
