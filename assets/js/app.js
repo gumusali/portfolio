@@ -30,3 +30,28 @@ menuBtn.forEach((a) => {
         a.classList.add('active');
     });
 });
+
+//
+let options = {
+  root: null,
+  rootMargin: '100px',
+  threshold: 0.5
+}
+
+let changeActive = (id) => {
+    document.querySelectorAll("header span a").forEach(e => { e.classList.remove('active'); if(e.id == id) { e.classList.add('active') }});
+}
+
+let callback = (i) => {
+    i.forEach(x => {
+        if(x.isIntersecting && x.intersectionRatio > 0.25) {
+            changeActive(x.target.className);
+        }
+    });
+}
+
+let observer = new IntersectionObserver(callback, options);
+let elements = document.querySelectorAll('section');
+elements.forEach((e) => {
+    observer.observe(e);
+});
