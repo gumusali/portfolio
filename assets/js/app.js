@@ -17,3 +17,16 @@ if (window.location.hash) {
         goto("section." + window.location.hash.slice(1));
     }
 }
+
+//
+const menuBtn = document.querySelectorAll("header span a");
+
+menuBtn.forEach((a) => {
+    a.addEventListener('click', () => {
+        menuBtn.forEach(e => {
+            e.classList.remove('active')
+        });
+
+        a.classList.add('active');
+    });
+});
