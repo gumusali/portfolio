@@ -44,7 +44,7 @@ let changeActive = (id) => {
 
 let callback = (i) => {
     i.forEach(x => {
-        if(x.isIntersecting && x.intersectionRatio > 0.25) {
+        if(x.isIntersecting && x.intersectionRatio > 0.5) {
             changeActive(x.target.className);
         }
     });
