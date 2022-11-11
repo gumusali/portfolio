@@ -34,8 +34,8 @@ menuBtn.forEach((a) => {
 //
 let options = {
   root: null,
-  rootMargin: '100px',
-  threshold: 0.5
+  rootMargin: '50px',
+  threshold: 0.1
 }
 
 let changeActive = (id) => {
@@ -44,7 +44,7 @@ let changeActive = (id) => {
 
 let callback = (i) => {
     i.forEach(x => {
-        if(x.isIntersecting && x.intersectionRatio > 0.5) {
+        if(x.isIntersecting && x.intersectionRatio > 0.1) {
             changeActive(x.target.className);
         }
     });
